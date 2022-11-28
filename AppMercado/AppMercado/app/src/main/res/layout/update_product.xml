@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333C75"
+    tools:context=".UpActivityProduct">
+
+    <EditText
+        android:id="@+id/nome_update"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/melhorar"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="Nome Produto"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/categoriaMudar"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/melhorar"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="Categoria"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_update" />
+
+    <EditText
+        android:id="@+id/preco_update"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/melhorar"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="Preço"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriaMudar" />
+
+    <EditText
+        android:id="@+id/url_update"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/melhorar"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:text="URL"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preco_update" />
+
+
+    <Button
+        android:id="@+id/deletar_update"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/melhorar"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:icon="@drawable/ic_delete"
+        app:iconGravity="top"
+        app:iconSize="30sp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/mudar_update"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url_update" />
+
+    <Button
+        android:id="@+id/mudar_update"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/melhorar"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:icon="@drawable/ic_update"
+        app:iconGravity="top"
+        app:iconSize="30sp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/deletar_update"
+        app:layout_constraintTop_toBottomOf="@+id/url_update" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
